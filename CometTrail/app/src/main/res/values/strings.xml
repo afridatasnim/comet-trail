@@ -11,6 +11,16 @@
     <string name="editTextYear">eg: 2021</string>
     <string name="editTextHoursDesired">eg: 15</string>
     <string name="buttonGenerate">Generate</string>
+    <string-array name = "majors_array">
+        <item>Computer Science</item>
+        <item>Electrical Engineering</item>
+        <item>Computer Engineering</item>
+    </string-array>
+    <string-array name = "terms_array">
+        <item>Fall</item>
+        <item>Spring</item>
+        <item>Summer</item>
+    </string-array>>
 
 
 </resources>
