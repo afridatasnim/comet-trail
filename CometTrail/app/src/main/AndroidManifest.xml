@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CometTrail">
         <activity
+            android:name=".RecommendedSchedules"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

@@ -7,12 +7,130 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textViewName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/textViewName"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/textViewHoursDesired"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="15dp"
+        android:text="@string/textViewHoursDesired"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTextViewHoursDesired"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/textViewTerm"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMajor" />
+
+    <TextView
+        android:id="@+id/textViewYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/textViewYear"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textViewMajor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/textViewMajor"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHoursDesired" />
+
+    <TextView
+        android:id="@+id/textViewInputPastClasses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/textViewInputFile"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextYear" />
+
+    <Button
+        android:id="@+id/buttonGenerate"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="155dp"
+        android:layout_marginEnd="155dp"
+        android:layout_marginBottom="37dp"
+        android:onClick="generateClassSchedules"
+        android:text="@string/buttonGenerate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="238dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="47dp"
+        android:ems="10"
+        android:hint="@string/textViewName"
+        android:inputType="textPersonName"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewName"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextViewHoursDesired"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="92dp"
+        android:ems="10"
+        android:hint="@string/editTextHoursDesired"
+        android:inputType="number"
+        android:numeric="integer"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewHoursDesired"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="80dp"
+        android:ems="10"
+        android:hint="@string/editTextYear"
+        android:inputType="number"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewYear"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinnerMajor"
+        android:layout_width="235dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="37dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewMajor"
+        tools:layout_editor_absoluteY="171dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
