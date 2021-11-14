@@ -13,7 +13,7 @@
             android:name=".RecommendedSchedules"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name="main.java.com.example.comettrail.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
