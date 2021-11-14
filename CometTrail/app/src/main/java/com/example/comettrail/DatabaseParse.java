@@ -1,5 +1,7 @@
 package com.example.comettrail;
 import java.io.IOException;
+import java.util.Scanner;
+import java.io.File;
 
 public class DatabaseParse {
 

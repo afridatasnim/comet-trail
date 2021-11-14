@@ -9,9 +9,12 @@
 
 package main.java.com.example.comettrail;
 
+import com.example.comettrail.DatabaseParse;
 import com.example.comettrail.DegClass;
+import com.example.comettrail.Degree;
 import com.example.comettrail.prioritizer;
 
+import java.io.IOException;
 import java.util.ArrayList;
 
 public class CourseManager {
@@ -142,7 +145,7 @@ public class CourseManager {
         return priorityModifier;
     }
 
-    public void testClass(){
+    public void testClass() throws IOException {
 
         //TEST SORTing BY WHETHER PRERECS MET
         //GENERATING RANDOM PRERECS
@@ -153,7 +156,8 @@ public class CourseManager {
         //create a list of "courses you have left" to test with
         ArrayList<DegClass> coursesLeftToTake = new ArrayList<DegClass>();
 
-
+        DatabaseParse dbParse = new DatabaseParse();
+        Degree testDegree = dbParse.parseDatabase("sample_cs_classes.txt");
         //create the CourseManager
         //a degree plan of 26 courses
         ArrayList<DegClass> test1 = new ArrayList<DegClass>();
