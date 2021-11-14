@@ -15,20 +15,20 @@ import com.example.comettrail.prioritizer;
 import java.util.ArrayList;
 
 public class CourseManager {
-    private Degree degreePlanList;
-    private Degree coursesTaken;
+    private ArrayList<DegClass> degreePlanList;
+    private ArrayList<DegClass> coursesTaken;
 
-    public CourseManager(Degree degreePlan, Degree currentCredit){
+    public CourseManager(ArrayList<DegClass> degreePlan, ArrayList<DegClass> currentCredit){
         // Constructor
         this.degreePlanList = degreePlan;
         this.coursesTaken = currentCredit;
     }
 
 
-    public Degree compare(){
+    public ArrayList<DegClass> compare(){
         int numCoursesTaken = coursesTaken.size(); //get number of courses taken
         int numCoursesLeft = degreePlanList.size(); //get total number of courses required to graduate
-        Degree coursesLeft = degreePlanList; //variable to store courses left to take
+        ArrayList<DegClass> coursesLeft = degreePlanList; //variable to store courses left to take
         boolean match = false; // keep track of matches
         int matchAt = 0;
 
@@ -72,7 +72,7 @@ public class CourseManager {
             //for the current course being considered
             DegClass canITake = coursesLeft.get(i);
             //get the prerecs
-            ArrayList<String> coursePreRecs = canITake.getPreRecs();
+            ArrayList<String> coursePreRecs = canITake.getPreReq();
             //count how many prerecs you have
             int numPreRecs = coursePreRecs.size();
             //for each prerec
@@ -156,14 +156,14 @@ public class CourseManager {
 
         //create the CourseManager
         //a degree plan of 26 courses
-        ArrayList<String> test1 = new ArrayList<String>();
+        ArrayList<DegClass> test1 = new ArrayList<DegClass>();
         for(int i = 0; i < 26; i++){
-            test1.add("course" + i);
+           //test1.add("course" + i);
         }
         //student has already taken 6 courses
-        ArrayList<String> test2 = new ArrayList<String>();
+        ArrayList<DegClass> test2 = new ArrayList<DegClass>();
         for(int i = 0; i < 6; i++){ //set which prerecs you have
-            test2.add("course" + i);
+            //test2.add("course" + i);
         }
         CourseManager cm = new CourseManager(test1, test2);
 

@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/.idea/comet-trail.iml" filepath="$PROJECT_DIR$/.idea/comet-trail.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/comet-trail3.iml" filepath="$PROJECT_DIR$/.idea/comet-trail3.iml" />
+>>>>>>> 0b76a6077121bc21f8a5eb916ec01286619b6065
     </modules>
   </component>
 </project>
