@@ -27,7 +27,7 @@ public class ScheduleMaker {
         for (int i = 0; i < courses.size(); i++) {
             curCourse = myCourses.get(i);
             courseHours = curCourse.charAt(curCourse.length() - 2);
-            if (maxHours < curHours + courseHours) {
+            if (maxHours > curHours + courseHours) {
                 mySchedule.addCourse(curCourse);
                 curHours += courseHours;
             }
