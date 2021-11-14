@@ -124,13 +124,4 @@
         app:layout_constraintBaseline_toBaselineOf="@+id/textViewYear"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <Spinner
-        android:id="@+id/spinnerMajor"
-        android:layout_width="235dp"
-        android:layout_height="32dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginEnd="37dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textViewMajor"
-        tools:layout_editor_absoluteY="171dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

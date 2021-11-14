@@ -10,7 +10,7 @@ import android.widget.Spinner;
 
 public class MainActivity extends AppCompatActivity {
 
-	Spinner dropdownMajor = findViewById(R.id.spinnerMajor);
+	//Spinner dropdownMajor = findViewById(R.id.spinnerMajor);
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
