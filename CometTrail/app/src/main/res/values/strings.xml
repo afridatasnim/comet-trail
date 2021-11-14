@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">CometTrail</string>
+    <string name="textViewName">Name:</string>
+    <string name="textViewHoursDesired">Hours Desired:</string>
+    <string name="textViewMajor">Major:</string>
+    <string name="textViewTerm">Term:</string>
+    <string name="textViewYear">Year:</string>
+    <string name="textViewInputFile">Input Past Classes:</string>
+    <string name="editTextMajor">eg: Computer Science</string>
+    <string name="editTextTerm">eg: Fall</string>
+    <string name="editTextYear">eg: 2021</string>
+    <string name="editTextHoursDesired">eg: 15</string>
+    <string name="buttonGenerate">Generate</string>
+
+
 </resources>
