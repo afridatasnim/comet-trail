@@ -93,25 +93,27 @@
     <EditText
         android:id="@+id/editTextTextPersonName"
         android:layout_width="238dp"
-        android:layout_height="47dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="44dp"
         android:layout_marginEnd="47dp"
         android:ems="10"
         android:hint="@string/textViewName"
         android:inputType="textPersonName"
-        app:layout_constraintBaseline_toBaselineOf="@+id/textViewName"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editTextTextViewHoursDesired"
         android:layout_width="100dp"
-        android:layout_height="40dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="21dp"
         android:layout_marginEnd="92dp"
         android:ems="10"
         android:hint="@string/editTextHoursDesired"
         android:inputType="number"
         android:numeric="integer"
-        app:layout_constraintBaseline_toBaselineOf="@+id/textViewHoursDesired"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
 
     <EditText
         android:id="@+id/editTextYear"
@@ -121,7 +123,36 @@
         android:ems="10"
         android:hint="@string/editTextYear"
         android:inputType="number"
+        android:minHeight="48dp"
         app:layout_constraintBaseline_toBaselineOf="@+id/textViewYear"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinnerMajor"
+        android:layout_width="276dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="5dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewMajor"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextViewHoursDesired"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Spinner
+        android:id="@+id/spinnerTerm"
+        android:layout_width="271dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="1dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerMajor"
+        tools:ignore="SpeakableTextPresentCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
