@@ -60,7 +60,7 @@ public class CourseManager {
 
     }
 
-    @Test
+
     public void testClass(){
 
         ArrayList<String> test1 = new ArrayList<String>();
@@ -98,7 +98,7 @@ public class CourseManager {
         }
         System.out.println(" ");
 
-        assertEquals(4,2+2);
+
     }
 
 }
